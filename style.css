@@ -1,0 +1,189 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+} 
+
+p {
+    font-weight: bold;
+}
+
+h4 {
+    margin: 10px 0px;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 30px;
+}
+
+/* NAVIGATION */
+
+a:hover {
+    color:rgb(2, 91, 255);
+}
+
+a {
+    color: rgb(129, 127, 127);
+    text-decoration: none;
+}
+
+.nav {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    height: 35px;
+    padding: 8px 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title {
+    font-size: 25px;
+}
+
+.nav-links {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    list-style: none;
+}
+
+.active {
+    color: white;
+}
+
+.btn {
+    background-color: rgb(3, 104, 187);
+    color: white;
+    height: 30px;
+    width: 150px;
+    border: 2px solid rgb(170, 0, 0);
+    box-shadow: 2px 4px 5px rgb(151, 0, 0);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(221, 14, 14);
+}
+
+/* NAVIGATION END */
+
+
+/* USER CARD */
+.container{
+    background-color: rgb(163, 162, 162);
+    min-height: 450px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card { 
+    padding: 50px;
+}
+
+.profile  {
+    height: 130px;
+    border: 2px solid rgb(255, 1, 1);
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    transition: all 150ms ease-in-out;
+}
+
+.profile:hover {
+    transform: scale(1.2);
+}
+
+.red {
+    background-color: rgb(221, 14, 14);
+    height: 120px;
+}
+
+.small {
+    height: 24px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.link {
+    color: rgb(43, 101, 226);
+    text-decoration:underline;
+    cursor:pointer;
+}
+/* USER CARD END */
+
+
+/* Boxes and pictures */
+.box {
+    background-color: rgb(172, 171, 171);
+    margin-bottom: 25px;
+    padding: 20px;
+    min-height: 50px;
+    /* box-shadow: 0 4px 10px 0 rgba(240, 234, 234, 0.2); */
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.blue {
+    background-color: rgb(10, 113, 209);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.medium {
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.medium:hover {
+    box-shadow: 2px 2px 5px gray;
+}
+.reject:hover {
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
+    cursor: pointer;
+}
+.accept:hover {
+    box-shadow: 2px 2px 5px rgb(109, 163, 0);
+    cursor: pointer;
+}
+
+.users, .user-flex {
+    margin: 5px;
+}
+
+.user-flex {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.small-box {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+}
