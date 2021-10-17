@@ -29,48 +29,47 @@
 
     <!-- User Card -->
     <div class="layout">
+
         <div>
-            <div class="container">
-                <div class="red">
-                    <div class="card">
-                        <img src="images/lumine.png" alt="user picture" class="profile">
-                        <h1 onclick="name(this)">Diana Krawczyk</h1>
-                        <p><img src="icons/map-marker.png" alt="map marker" class="small">Boston, MA</p>
-                        <p>Developer | Engineer | Problem Solver</p>
-                        <p>Master of Shadows and the Internet!</p>
-                        <p><img src="icons/gear.png" alt="gear icon" class="small"><span class="link">edit
-                                profile</span>
-                        </p>
-                    </div>
-                </div>
+            <div class="profile_box">
+                <img src="images/lumine.png" alt="user picture" class="profile">
+                <h1 id="username">Diana Krawczyk</h1>
+                <p><img src="icons/map-marker.png" alt="map marker" class="small">Boston, MA</p>
+                <p>Developer | Engineer | Problem Solver</p>
+                <p>Master of Shadows and the Internet!</p>
+                <p onclick="name(username)"><img src="icons/gear.png" alt="gear icon" class="small"><span
+                        class="link">edit
+                        profile</span>
+                </p>
             </div>
 
-            <!-- Education Box -->
-            <div class="blue">
-                <p>Education</p>
-            </div>
-            <div class="box">
-                <h1>Coding Dojo - Full Stack Bootcamp</h1>
-                <h4> Oct 2021 - Feb 2022</h4>
+            <div>
+                <!-- Education Box -->
+                <div class="blue">
+                    <p>Education</p>
+                </div>
                 <div class="box">
-                    <div>
-                        <p> Current Student at Coding Dojo, together with plenty of genius minds. <br>
-                            (Hopefully a future) Triple black belt in Python, MERN, and Java... 🤓</p>
+                    <h1>Coding Dojo - Full Stack Bootcamp</h1>
+                    <h4> Oct 2021 - Feb 2022</h4>
+                    <div class="box">
+                        <div>
+                            <p> Current Student at Coding Dojo, together with plenty of genius minds. <br>
+                                (Hopefully a future) Triple black belt in Python, MERN, and Java... 🤓</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <h1>UMass Boston: IT; SysAdmin</h1>
-                <h4> Sept 2016 - Dec 2020</h4>
                 <div class="box">
-                    <div>
-                        <p> Graduated and decided that sitting at a desk picking up phone calls <br>
-                            just wasn't my calling 🤓</p>
+                    <h1>UMass Boston: IT; SysAdmin</h1>
+                    <h4> Sept 2016 - Dec 2020</h4>
+                    <div class="box">
+                        <div>
+                            <p> Graduated and decided that sitting at a desk picking up phone calls <br>
+                                just wasn't my calling 🤓</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- Connection Requests Box  -->
         <div>
             <div class="blue">
@@ -81,17 +80,15 @@
                 <div class="user-flex" id="req1">
                     <p><img src="images/hutao.png" alt="user-circle" class="medium">
                         Hu Tao</p>
-                    <p><img src="icons/accept.png" alt="accept" class="medium accept"
-                            onclick="connections(); remove1(); requests()">
-                        <img src="icons/reject.png" alt="reject" class="medium reject" onclick="remove1(); requests()">
+                    <p><img src="icons/accept.png" alt="accept" class="medium accept" onclick="accept('#req1')">
+                        <img src="icons/reject.png" alt="reject" class="medium reject" onclick="reject('#req1')">
                     </p>
                 </div>
                 <div class="user-flex" id="req2">
                     <p><img src="images/mona.png" alt="user-circle" class="medium">
                         Mona</p>
-                    <p><img src="icons/accept.png" alt="accept" class="medium accept"
-                            onclick="connections(); remove2(); requests()">
-                        <img src="icons/reject.png" alt="reject" class="medium reject" onclick="remove2(); requests()">
+                    <p><img src="icons/accept.png" alt="accept" class="medium accept" onclick="accept('#req2')">
+                        <img src="icons/reject.png" alt="reject" class="medium reject" onclick="reject('#req2')">
                     </p>
                 </div>
             </div>
@@ -148,4 +145,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
